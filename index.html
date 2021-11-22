@@ -1,0 +1,68 @@
+<!--
+    File: index.html
+    GUI Assignment: jQuery Dynamic Multiplication Table
+    Cameron Benassi, UMass Lowell Computer Science, cameron_benassi@student.uml.edu 
+    Copyright (c) 2021 by Cameron.  All rights reserved.  May be freely copied or excerpted 
+    for educational purposes with credit to the author. updated by CB on November 21, 2021
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
+        <title>Multiplication Table Generator - v2.2</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div id="tabContainer"> 
+                <ul id="tabList">
+                </ul>
+            </div>
+            <h3>Multiplication Table Generator - v2.2</h3>
+            <form id="numbers">                
+                1st Number Low End:
+                <div class="inputWrapper">
+                    <input name="firstLow" id="firstLow" type="text" value="0">
+                    <div id="slider1Low"></div>
+                </div>
+                1st Number High End:
+                <div class="inputWrapper">
+                    <input name="firstHigh" id="firstHigh" type="text" value="0">
+                    <div id="slider1High"></div>
+                </div>
+                2nd Number Low End:
+                <div class="inputWrapper">
+                    <input name="secondLow" id="secondLow" type="text" value="0">
+                    <div id="slider2Low"></div>
+                </div>
+                2nd Number High End:
+                <div class="inputWrapper">
+                    <input name="secondHigh" id="secondHigh" type="text" value="0">
+                    <div id="slider2High"></div>
+                </div>
+                <input class="btn btn-primary" id="saveTable" type="button" value="Save Table">
+            </form>
+            <br><br>
+            <div id="tableWrapper">
+                <table id="results">
+                    <tHead></tHead>
+                    <tBody id="tbodyid"></tBody>
+                </table>
+            </div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="js/script-main.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+        
+    </body>
+</html>

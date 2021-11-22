@@ -1,0 +1,90 @@
+/*
+    File: stylesheet.css
+    GUI Assignment: jQuery Dynamic Multiplication Table
+    Cameron Benassi, UMass Lowell Computer Science, cameron_benassi@student.uml.edu 
+    Copyright (c) 2021 by Cameron.  All rights reserved.  May be freely copied or excerpted 
+    for educational purposes with credit to the author. updated by CB on November 21, 2021
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #39393b !important;
+}
+
+.jumbotron {
+    padding: 75px;
+    margin: 25px;
+    border-radius: 15px;
+
+}
+
+#tabContainer {
+    height: 40px;
+}
+
+a.delete {
+    color: red !important;
+}
+
+.slider {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.inputWrapper {
+    margin-right: 15px;
+}
+
+#slider1Low,
+#slider1High,
+#slider2Low,
+#slider2High {
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    width: 155px;
+}
+
+#manage {
+    height: 25px;
+    font-size: 10px;
+    float: right;
+
+    padding: 5, 0, 0, 5px;
+}
+
+#submit {
+    margin-top: 15px;
+}
+
+#results {
+    max-width: 300px;
+    overflow: scroll;
+}
+
+#results td {
+    border: 1px solid black;
+    padding: 0px 5px;
+
+    text-align: right;
+    width: 25px;
+}
+
+#results th {
+    border: 1px solid white;
+    padding: 0px 5px;
+    text-align: right;
+    width: 25px;
+
+    background-color: black;
+    color: white;
+}
+
+#tableWrapper {
+    overflow-x: auto;
+}
+
+#tableWrapper #results {
+    white-space: nowrap;
+}
